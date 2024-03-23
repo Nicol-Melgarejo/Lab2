@@ -1,0 +1,68 @@
+﻿<Window x:Class="Lab02.Salida"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab02"
+        mc:Ignorable="d"
+        Title="Salida" Height="450" Width="800">
+    <Grid Margin="20">
+        <TextBlock Text="Registro de Salida " FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="202,10,0,0" Width="210"/>
+        <TextBlock Text="Tipo de Documento:" VerticalAlignment="Top" Margin="154,58,468,0"/>
+        <ComboBox VerticalAlignment="Top" Margin="334,52,282,0">
+            <ComboBoxItem Content="DNI"/>
+            <ComboBoxItem Content="Pasaporte"/>
+            <ComboBoxItem Content="Carnet de Extranjería"/>
+            <ComboBoxItem Content="Otro"/>
+        </ComboBox>
+
+
+        <TextBlock Text="Número de Documento:" VerticalAlignment="Top" Margin="154,91,453,0"/>
+        <TextBox VerticalAlignment="Top" Margin="334,86,282,0" Height="26"/>
+
+        <TextBlock Text="Tipo de Auto:" VerticalAlignment="Top" Margin="156,126,499,0" Height="21" RenderTransformOrigin="0.344,0.662">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.548"/>
+                    <TranslateTransform X="0.032" Y="0.132"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <ComboBox VerticalAlignment="Top" Margin="334,128,282,0">
+            <ComboBoxItem Content="Sedán"/>
+            <ComboBoxItem Content="Camioneta"/>
+            <ComboBoxItem Content="Camión"/>
+            <ComboBoxItem Content="Motocicleta"/>
+            <ComboBoxItem Content="Otro"/>
+        </ComboBox>
+
+        <TextBlock Text="Nombre del Transportista:" VerticalAlignment="Top" Margin="154,168,453,0"/>
+        <TextBox VerticalAlignment="Top" Margin="334,163,282,0" Height="26"/>
+
+        <TextBlock Text="Fecha:" VerticalAlignment="Top" Margin="154,210,551,0"/>
+        <DatePicker VerticalAlignment="Top" Margin="334,206,282,0" RenderTransformOrigin="0.681,0.502"/>
+
+        <TextBlock Text="Hora:" VerticalAlignment="Top" Margin="154,250,529,0"/>
+        <TextBox VerticalAlignment="Top" Margin="334,245,282,0" Height="25"/>
+
+        <TextBlock Text="Peso de Ingreso (kg):" VerticalAlignment="Top" Margin="154,284,468,0"/>
+        <TextBox VerticalAlignment="Top" Margin="334,284,282,0" Height="27"/>
+
+
+        <TextBlock Text="Peso de Salida (kg):" VerticalAlignment="Top" Margin="154,324,468,0"/>
+        <TextBox VerticalAlignment="Top" Margin="334,323,282,0" Height="27"/>
+
+        <Button Content="Guardar" Click="Guardar_Click" HorizontalAlignment="Left" Margin="583,317,0,27" Width="116" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+    </Grid>
+</Window>

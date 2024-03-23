@@ -1,0 +1,22 @@
+﻿<Window x:Class="Lab02.Conductores"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab02"
+        mc:Ignorable="d"
+        Title="Conductores" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="Registro de Conductores " FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="154,28,0,0" Width="289"/>
+
+        <TextBlock Text="Peso Maximo:" VerticalAlignment="Top" Margin="154,91,493,0"/>
+        <TextBox VerticalAlignment="Top" Margin="334,86,322,0" Height="26"/>
+
+        <TextBlock Text="Placa:" VerticalAlignment="Top" Margin="154,128,493,0"/>
+        <TextBox VerticalAlignment="Top" Margin="334,123,322,0" Height="26"/>
+
+        <TextBlock Text="Peso Vacio:" VerticalAlignment="Top" Margin="154,165,493,0"/>
+        <TextBox VerticalAlignment="Top" Margin="334,160,322,0" Height="26"/>
+        <Button Content="Guardar" Click="Guardar_Click" HorizontalAlignment="Left" Margin="298,231,0,174" Width="52"/>
+    </Grid>
+</Window>
